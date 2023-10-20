@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Two-Stroke Oil Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator ulja</h1>
+        <label for="gasoline">Količina benzina (litre):</label>
+        <input type="number" id="gasoline" step="0.01">
+        <label for="ratio">Željeni omjer:</label>
+        <select id="ratio">
+            <option value="0.025">2.5% (40:1)</option>
+            <option value="0.03">3%</option>
+            <option value="0.04">4%</option>
+        </select>
+        <div class="result">
+            <p>Količina potrebnog ulja (litre): <span id="oilAmount">0.00</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
